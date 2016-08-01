@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="D:\plag\leaflet\leaflet.css" />
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="D:\plag\leaflet\leaflet.ie.css" />
+    <![endif]-->
+    <script src="D:\plag\leaflet\leaflet.js"></script>
+    <link rel="stylesheet" rel="nofollow" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+    <![endif]-->
+    <script src= "http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+    <style>
+
+        #map {width: 600px; height: 600px; }
+
+    </style>
+    <h1>Something in the head</h1>
+</head>
+<body>
+<div id="map"></div>
+
+<script type='text/javascript'>
+
+    //Определяем карту, координаты центра и начальный масштаб
+    var map = L.map('map').setView([50.45014, 30.52412], 12);
+
+    //Добавляем на нашу карту слой OpenStreetMap
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a rel="nofollow" href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    //Add layer for paths
+    //TODO
+
+</script>
+</body>
+</html>
